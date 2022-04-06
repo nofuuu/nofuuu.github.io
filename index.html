@@ -1,7 +1,92 @@
 <!DOCTYPE html>
 <html>
+
+<head>
+    <meta charset="UTF-8" />
+    <link href="style.css" rel="StyleSheet" type="text/css" />
+    <title>Kemppainen - Portfolio</title>
+</head>
+
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+    <!--Sidebar-->
+    <button id="sidebaropen" onclick="w3_open()">☰</button>
+    <div id="sidebar" class="sidebar" style="display:none">
+        <button onclick="w3_close()">Close &times;</button>
+        <ul>
+            <li><a href="#2022"><span>2022</span></a></li>
+            <li><a href="#2021"><span>2021</span></a></li>
+        </ul>
+    </div>
+    <!--Menu-->
+    <nav>
+        <ul>
+            <li><a class="active" href="index.html">Portfolio</a></li>
+            <li><a href="about.html">About me</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="name">
+            <p>Noora Kemppainen</p>
+        </div>
+    </nav>
+
+    <!-- 2022 -->
+    <p id="2022" class="year">2022</p>
+    <div class="block">
+        <div class="box left txt">
+            <div>
+                <img class="gob" src="/images/gss-icon.png" alt="goblin head icon">
+                <h2>Goblin Slayer-Slayer:<br> A hybrid card game</h2>
+            </div>
+            <p>
+                A hybrid card game made in a team of seven during University of Jyväskylä
+                2021-2022 hybrid game course (featuring physical aspects of the game made in
+                collaboration with Gradia students).
+            </p>
+            <p>
+                My job was to plan and create the art for the application and the goblin
+                playing cards.
+            </p>
+            <p>
+                Check the project on <a href="https://github.com/Criipi/GoblinSlayer-Slayer">GitHub</a>.
+                Playing cards are included as a pdf file.
+            </p>
+        </div>
+
+        <div class="box right">
+            <img src="images/gss-pic.jpg" alt="picture of a card game featuring goblins">
+        </div>
+    </div>
+
+    <!-- 2021 -->
+    <p ID="2021" class="year">2021</p>
+    <div class="block">
+        <div class="box right txt">
+            <h2>Bad Feather Day:<br> A 3D platforming game</h2>
+            <p>This was my first proper experience working on a game in a team.
+                This game was made in a team of seven during University of Jyväskylä 2021 game course.</p>
+            <p>
+                My job was to plan and create the art for the game.
+                This was my first time with animation and creating 3d graphics.
+                I chose a low poly style to keep the scope of the project feasible
+                and made the models using Blender.
+            </p>
+        </div>
+        <div class="box left">
+            <p>aaa</p>
+        </div>
+    </div>
+
+    <script>
+        function w3_open() {
+            document.getElementById("sidebar").style.display = "block";
+            document.getElementById("sidebaropen").style.display = "none";
+        }
+
+        function w3_close() {
+            document.getElementById("sidebar").style.display = "none";
+            document.getElementById("sidebaropen").style.display = "block";
+        }
+    </script>
 </body>
+
 </html>
