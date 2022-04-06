@@ -120,6 +120,10 @@
         border-top-left-radius: 25px;
     }
 
+    .corner, .corner:hover {
+        border-top-left-radius: 0px;
+    }
+
     .name {
         display: block;
         float: right;
